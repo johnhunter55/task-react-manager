@@ -8,7 +8,7 @@ export function Header() {
       : "text-white text-xl hover:text-gray-200";
   };
   return (
-    <header className="bg-taupe-800 p-3 flex justify-center">
+    <header className="bg-indigo-900 p-3 flex justify-center">
       <div className="max-w-7xl flex justify-between grow">
         <NavLink to="/">
           <h1 className="text-3xl font-bold text-white">Task Manager</h1>
