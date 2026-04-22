@@ -23,6 +23,8 @@ export function Stats() {
   return (
     <div>
       <h1>amount of tasks: {taskAmount}</h1>
+      <h1>Completed: {parsedTasks.filter((task) => task.completed).length}</h1>
+
       <h1>
         High: {priorityTypes.filter((priority) => priority === "High").length}
       </h1>
