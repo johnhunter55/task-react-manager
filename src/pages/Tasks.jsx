@@ -47,10 +47,16 @@ export function Tasks() {
       <h1 className="px-3 p-2 text-lg text-indigo-900">Create a Task:</h1>
       <TaskForm onAddTask={handleAddTask} />
       <div className="flex mb-4">
-        <label className="text-indigo-900 font-medium mr-2 self-center">
+        <label
+          htmlFor="sortBy"
+          className="text-indigo-900 font-medium mr-2 self-center"
+        >
           Sort by:
         </label>
+
         <select
+          id="sortBy"
+          name="sortBy"
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}
           className="border-2 border-indigo-200 p-1 rounded px-2 outline-none bg-white"
